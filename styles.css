@@ -1,0 +1,201 @@
+:root {    
+--Soft-red: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+--Dark-brown: hsl(25, 47%, 15%);
+--Medium-brown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mybalance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: var(--Soft-red);
+    color: var(--Very-pale-orange);
+}
+
+.mybalance-info p{
+    font-size: .8rem;
+    font-weight: 400;
+} 
+
+.mybalance-info span {
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-pale-orange);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 85%;
+}
+
+.chart-wrapper h2 {
+    font-size: 1.2rem;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.bar-chart-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10px; 
+}
+
+.bar-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 30px 10px;
+    position: relative;
+}
+
+.bar-amount.hide {
+    display: flex;  
+    position: absolute;
+    background-color: var(--Dark-brown);
+    color: var(--Very-pale-orange);
+    padding: 5px;
+    font-size: .8rem;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 3s ease-in-out;
+}
+.bar-amount {
+    display: none;
+}
+
+.bar {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    border-radius: 3px;
+    background-color: var(--Soft-red);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+
+.lable {
+    position: absolute;
+    bottom: -20px;
+    font-size: .8rem;
+    color: var(--Medium-brown);
+}
+
+.chart-container:after {
+    content: " ";
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    background: var(--Medium-brown);
+}
+
+.total-expenses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-month p, .last-month p{
+    color: var(--Medium-brown);
+    font-size: .8rem;
+}
+
+.current-month span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Dark-brown);
+}
+
+.last-month span {
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--Dark-brown);
+    margin-left: 50px;
+}
+
+/* for tablets */
+@media only screen and (min-width:600px){
+    .mybalance {
+        width: 30%;      
+    }
+
+    .chart-wrapper {
+        width: 30%;
+    }
+
+    .mybalance-info p {
+        font-size: .9rem;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* for desktops */
+@media only screen and (min-width: 768px) {
+    .mybalance {
+        width: 25%;      
+    } 
+
+    .chart-wrapper {
+        width: 25%;
+    }
+
+    .mybalance-info p {
+        font-size: .9rem;
+        margin-bottom: 5px;
+    }
+
+
+    .bar {
+        width: 30px;   
+    }
+   
+    .current-month span {
+        font-size: 2rem;
+    }
+}
+
+
+ 
+
+
+

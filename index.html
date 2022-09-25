@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mybalance">
+        <div class="mybalance-info">
+          <p>My balance</p>
+          <span>$921.48</span>
+        </div>
+        <div class="mybalance-logo">
+          <img src="/images/logo.svg" alt="logo"/>
+        </div>
+      </div>
+      <div class="chart-wrapper">
+        <h2>Spending-Last 7 days</h2>
+        <div class="chart-container">
+          <div class="bar-chart-wrapper">
+             <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-amount"></div>
+              <div class="bar"></div>
+              <div class="lable"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="total-expenses">
+          <div class="current-month">
+            <p>Total this month</p>
+            <span>$478.33</span>
+          </div>
+          <div class="last-month">
+            <span>+2.4%</span>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pavan H</a>.
+  </div> 
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
