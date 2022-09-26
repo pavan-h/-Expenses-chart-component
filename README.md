@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github]([https://your-solution-url.com](https://github.com/pavan-h/-Expenses-chart-component/blob/main/README.md))
+- Solution URL: [github]([(https://github.com/pavan-h/-Expenses-chart-component/blob/main/README.md]))
 - Live Site URL: [live](https://pavan-expenses-chart-component.netlify.app/)
 
 ## My process
@@ -59,7 +59,7 @@ function show(data) {
 ## Author
 
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Github - [@pavan-h]([https://www.twitter.com/yourusername](https://github.com/pavan-h))
+- Github - [@pavan-h]([https://github.com/pavan-h])
 
 
 
