@@ -58,7 +58,7 @@ function show(data) {
 
 ## Author
 
-- Frontend Mentor - [@pavan-h](https://www.frontendmentor.io/profile/pavan-h))
+- Frontend Mentor - [@pavan-h](https://www.frontendmentor.io/profile/pavan-h)
 - Github - [@pavan-h](https://github.com/pavan-h)
 
 
